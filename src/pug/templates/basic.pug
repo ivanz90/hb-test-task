@@ -1,0 +1,18 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="en").root
+  head     
+    meta( name='viewport', content='width=device-width, initial-scale=1' )
+    link(rel="stylesheet", href="css/style.css")
+    script(src="js/libs/jquery-3.4.1.min.js")
+    script(src="js/libs/owl.carousel.min.js")
+    script(src="js/libs/jquery.mask.min.js")
+    
+
+    block title
+      title Page title
+  body.page
+    block content
+    script(src="js/main.js")

@@ -1,0 +1,29 @@
+.burger {
+  display: none;
+  cursor: pointer;
+  @include max-sm {
+    display: block;
+  }
+  &__bar {
+    width: 35px;
+    height: 5px;
+    background-color: $white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+
+/* Rotate first bar */
+.change .burger__bar--n--1 {
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .burger__bar--n--2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .burger__bar--n--3 {
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}

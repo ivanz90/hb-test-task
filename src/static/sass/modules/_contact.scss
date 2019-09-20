@@ -1,0 +1,176 @@
+.contact {
+  background-color: $white;
+  position: relative;
+  &__slogan {
+    font-size: 18px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    @include max-md {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__form {
+    width: 72%;
+    max-width: 770px;
+  }
+  &__adress {
+    padding-right: 30px;
+    @include max-md {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  &__adress-title {
+    text-align: left;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    @include max-sm {
+      text-align: center;
+    }
+  }
+  &__form-title {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    @include max-sm {
+      text-align: center;
+    }
+  }
+} 
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  @include max-sm {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__element {
+    width: calc(50% - 15px);
+    @include max-sm {
+      width: 100%;
+    }
+  }
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $font-gray;
+    height: 35px;
+    margin-top: 40px;
+    &::placeholder {
+      color: $font-gray;
+      position: relative;
+      bottom: 10px;
+    }
+    &--error {
+      border-bottom: 1px solid red;
+    }
+  }
+  &__message {
+    width: 100%;
+  }
+  &__textarea {
+    resize: none;
+    &::placeholder {
+      bottom: 0;
+    }
+  }
+  &__button {
+    margin: 0;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    @include max-md {
+      justify-content: center;
+    }
+  }
+  &__error {
+    color: $white;
+    background-color: red;
+    display: none;
+  }
+}
+
+.button {
+  border: none;
+  background-color: $white;
+  min-width: 155px;
+  padding: 0;
+  margin-right: 0;
+  &__icon {
+    width: 26px;
+    height: 25px;
+    fill: $green;
+    display: inline-block;
+  }
+  &__text {
+    font-weight: 700;
+    // margin-top: 0.3em;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    margin-left: 10px;
+  }
+}
+
+.modal {
+  width: 300px;
+  height: 200px;
+  border: 5px solid $black;
+  background-color: $green;
+  position: absolute;
+  margin: 0 auto;
+  display: none;
+  left:0;
+  right:0;
+  top:50%;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+  &__text {
+    font-size: 20px;
+  }
+  &__close {
+    width: 60px;
+    height: 60px;
+    border: 5px solid $black;
+    border-radius: 100%;
+    margin-top: 10px;
+    position: relative;
+    background-color: $black;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 5px; 
+      top: 48%;
+      background-color: $white;
+    }
+    &:before {
+      transform: rotate(60deg);
+      left: 8%;
+    }
+    &:after {
+      transform: rotate(-60deg);
+      left: 34%;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// basic font
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Pacifico&display=swap');
+
+.text--color--green {
+  color: $green;
+}
+
+.text--color--transparent {
+  opacity: 0.3;
+}
+
+.text--weght--bold {
+  font-weight: 700;
+}
+
+.text--transform--uppercase {
+  text-transform: uppercase;
+}
+
+.page {
+  font-size: 13px;
+  background-color: $black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page-section {
+  padding: 75px 0;
+}
+
+// Titles
+
+.title {
+  text-align: center;
+  font-weight: 300;
+  margin: 15px;
+}
+
+// Basic styles for sections
+
+
+// Wrappers and containers
+
+.wrapper {
+  width: 96%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  color: $white;
+  font-size: 28px;
+  max-width: 120px;
+  &--header {
+    position: relative;
+    &:after {
+      content: "";
+      width: 1px;
+      height: 15px;
+      background-color: $blue;
+      position: absolute;
+      left: 110px;
+      top: 12px;
+    }
+  }
+}
+
+.heart-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  &__svg {
+    fill: $font-gray;
+    stroke: $font-gray;
+  }
+  &--section{
+    &:before {
+      position: absolute;
+      content: "";
+      width: 90px;
+      height: 1px;
+      background: $font-gray;
+      top: 7px;
+      right: 30px;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 90px;
+      height: 1px;
+      background: $font-gray;
+      top: 7px;
+      left: 30px;
+    }
+  }
+  &--footer {
+    display: inline-block;
+  }
+}
+

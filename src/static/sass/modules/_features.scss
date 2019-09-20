@@ -1,0 +1,57 @@
+.features {
+  background-color: $bg-gray;
+  &__title {
+    margin: 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @include max-md {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__heart {
+    margin: 20px auto;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-basis: 355px;
+  @include max-md {
+    flex-basis: auto;
+  }
+  &__icon {
+    &--branding {
+      background: url('../img/icons/branding.png') no-repeat;
+    }
+    &--development {
+      background: url('../img/icons/development.png') no-repeat;
+    }
+    &--consulting {
+      background: url('../img/icons/consulting.png') no-repeat;
+    }
+  }
+  &__icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid $green;
+    border-radius: 100%;
+    flex-shrink: 0;
+    margin-top: 15px;
+    background-position: center;
+  }
+  &__title {
+    text-align: left;
+    margin-left: 0;
+  }
+  &__info {
+    margin-left: 20px;
+    max-width: 300px;
+  }
+  &__description {
+    word-wrap: none;
+    letter-spacing: 0.12em;
+  }
+}

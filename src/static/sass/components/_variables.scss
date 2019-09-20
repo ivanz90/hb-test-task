@@ -1,0 +1,24 @@
+/* Colors  */
+
+$white: #fff;
+$font-gray: #c9cfcd;
+$bg-gray: #f4f7f9;
+$green: #1ea78d;
+$black: #062033;
+$blue: #154458;
+$menu-hover: #32b0ee;
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|PT+Sans:400,400i,700,700i&display=swap');
+
+$m-serrat: 'Montserrat', sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+$lato: 'Lato', sans-serif;
+
+/* Screen breakpoints */
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
