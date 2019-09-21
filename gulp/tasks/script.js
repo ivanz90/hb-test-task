@@ -12,7 +12,7 @@ let jsLibs = [
     'src/static/js/libs/*.js'
 ];
 
-let isDev = true;
+let isDev = false;
 let isProd = !isDev;
 
 let webConfig = {
@@ -29,7 +29,7 @@ let webConfig = {
     ]
   },
   mode: isDev ? 'development' :  'production',
-  devtool: isDev ? 'eval-source-map' : 'none'
+  devtool: 'none'
 };
 
 module.exports = function() {

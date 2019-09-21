@@ -1,4 +1,4 @@
-//import { isPattern } from "babel-types";
+// import { isPattern } from "babel-types";
 
 // short function for console.log
 
